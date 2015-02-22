@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta_description %}{{ SITENAME }}, {{ TAGLINE }}{% endblock meta_description %}">
+    {% if FEED_ALL_ATOM %}
+        <link rel="alternate"  href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Full Atom Feed"/>
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="{{ SITENAME }} Full RSS Feed"/>
+    {% endif %}
+    {% if FEED_ATOM %}
+        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Atom Feed"/>
+    {% endif %}
+    {% if FEED_RSS %}
+        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" title="{{ SITENAME }} RSS Feed"/>
+    {% endif %}
+    {% block head %}
+        <title>{% block title %}{{ SITENAME }} // {{ TAGLINE }}{% endblock title %}</title>
+    {% endblock head %}
+    {% if FAVICON %}
+        <link href="{{ SITEURL }}/{{ FAVICON }}" rel="icon">
+    {% endif %}
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community and it attracts the best Python programmers across the country and abroad.">
+    <meta name="author" content="Pycon India">
+    <link rel="shortcut icon" href="favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme//css/font-awesome.css">
+    <!-- Site CSS -->
+    <link id="theme-style" rel="stylesheet" href="{{ SITEURL }}/theme/css/styles.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/animate.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    </script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+    </script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">-->
+    {% block head_css %}{% endblock %}
+    
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+    {% block head_js %}{% endblock %}
+</head>
+<body data-spy="scroll">
+    {% include 'header.html' %}
+    <!--//header-->
+    {% block content %}
+    
+    {% endblock %}
+    {% include 'footer.html' %}
+    
+    <!-- Javascript -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery-1.11.1.min.js">
+    </script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.easing.1.3.js">
+    </script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.scrollTo.min.js">
+    </script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/main.js">
+    </script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/responsive-tabs.js">
+    </script>
+    <script>
+        $(window).scroll(function() {
+          $('#whybox2').each(function() {
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 400) {
+              $(this).addClass("slideLeft");
+            }
+          }
+                        );
+
+        $('#whybox1').each(function() {
+          var imagePos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow + 400) {
+            $(this).addClass("slideRight");
+          }
+        }
+                        );
+      $('#plan3').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+          $(this).addClass("slideLeft");
+        }
+      }
+                      );
+      $('#plan2').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+          $(this).addClass("slideUp");
+        }
+      }
+                      );
+      $('#plan1').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+          $(this).addClass("slideRight");
+        }
+      }
+                      );
+    }
+                    );
+  </script>
+  <script type="text/javascript">
+    (function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm']);
+    }
+    )(jQuery);
+  </script>
+    
+</body>
+</html>
