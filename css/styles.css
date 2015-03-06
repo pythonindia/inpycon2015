@@ -108,7 +108,7 @@ pre code {
 .header {
     padding: 5px 0;
     /* border-top: 5px solid #30a289;*/
-    
+
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
     width: 100%;
@@ -159,7 +159,7 @@ pre code {
 }
 .header .main-nav .nav .nav-item {
     font-weight: normal;
-    margin-right: 30px;
+    margin-right: 5px;
     font-family: 'Lato', arial, sans-serif;
 }
 .header .main-nav .nav .nav-item.active a {
@@ -750,7 +750,7 @@ img {
     width: 4px;
     background: #0e98c5;
     /*left: 50%;*/
-    
+
     top: 20px;
     bottom: 20px;
     margin-left: -9px;
@@ -759,7 +759,7 @@ img {
     position: relative;
     /*width: 50%;
         float: right;*/
-    
+
     margin-top: 5px;
     margin-left: 3px;
     margin-bottom: 40px;
