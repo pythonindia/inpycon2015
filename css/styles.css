@@ -1150,3 +1150,30 @@ footer a:hover {
 .sponbox li .fa {
     color: #217c5b;
 }
+
+span.collapse {
+    display: inline;
+    position: static;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease;
+       -moz-transition: opacity 0.35s ease;
+        -ms-transition: opacity 0.35s ease;
+         -o-transition: opacity 0.35s ease;
+            transition: opacity 0.35s ease;
+}
+span.collapsing {
+    display: inline;
+    position: static;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity .35s ease;
+         -o-transition: opacity .35s ease;
+            transition: opacity .35s ease;
+}
+span.collapse.in {
+    display: inline;
+    position: static;
+    opacity: 1;
+    height: auto;
+}
