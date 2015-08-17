@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     /* ======= Fixed header when scrolled ======= */
     
     $(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 50) {
+         if ($(window).scrollTop() >= 5) {
              $('#header').addClass('navbar-fixed-top');
          }
          else {
