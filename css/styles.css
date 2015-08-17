@@ -446,7 +446,7 @@ pre code {
 .venue .item {
     position: relative;
     padding: 60px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 .venue .item img {
     border-radius: 10px;
@@ -500,6 +500,10 @@ pre code {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+}
+
+.circularmap {
+    padding-top: 10px;
 }
 /* ======= Sponsors Section ======= */
 
