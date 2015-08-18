@@ -590,8 +590,19 @@ pre code {
 
 .footer {
     padding: 20px 0 2px 0;
-    background: #49a0d0;
     color: #fff;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #21A7D5),
+        color-stop(1, #2477a4)
+    );
+    background-image: -o-linear-gradient(bottom, #21A7D5 0%, #2477a4 100%);
+    background-image: -moz-linear-gradient(bottom, #21A7D5 0%, #2477a4 100%);
+    background-image: -webkit-linear-gradient(bottom, #21A7D5 0%, #2477a4 100%);
+    background-image: -ms-linear-gradient(bottom, #21A7D5 0%, #2477a4 100%);
+    background-image: linear-gradient(to bottom, #21A7D5 0%, #2477a4 100%);
 }
 .footertop {
     background-image: url('../images/footerbg.png');
