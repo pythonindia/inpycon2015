@@ -1,0 +1,79 @@
+From e0dd8d4cfde7978d0d25db744a2d31b32b9275c0 Mon Sep 17 00:00:00 2001
+From: kirang89 <me@kirang.in>
+Date: Tue, 15 Sep 2015 02:17:07 +0530
+Subject: [PATCH] Re-organize volunteer information
+
+---
+ team.html | 46 +++++++++++++++++++++-------------------------
+ 1 file changed, 21 insertions(+), 25 deletions(-)
+
+diff --git a/team.html b/team.html
+index d464547..e9eee7b 100644
+--- a/team.html
++++ b/team.html
+@@ -232,7 +232,10 @@ working for Zilogic Systems as an embedded software developer and trainer. Also
+             <div class="clearfix"></div>
+             <br>
+             <br>
+-            <h3>Core Volunteers</h3>
++            <h3>Core Volunteers & Staff Information</h3>
++            <p>
++              The following list contains the primary points of contact for PyCon India 2015.
++            </p>
+             <ul>
+               <li><b>Chair</b> - Vijay Bang (<a href="https://twitter.com/vnbang2003">@vnbang2003</a>)</li>
+               <li><b>Co-chair</b> - Kracekumar Ramaraju (<a href="https://twitter.com/kracetheking">@kracetheking</a>)</li>
+@@ -240,33 +243,26 @@ working for Zilogic Systems as an embedded software developer and trainer. Also
+               <li><b>Volunteer Co-ordinator</b> - Chandan Kumar (<a href="https://twitter.com/ciypro">@ciypro</a>)</li>
+               <li><b>Selection Panel Co-ordinator</b> - Vanitha Shanmugam (<a href="https://twitter.com/shanmalliga">@shanmalliga</a>)</li>
+               <li><b>Registration Lead</b> - Haris Ibrahim (<a href="https://twitter.com/harisibrahimkv">@harisibrahimkv</a>)</li>
++              <li><b>Dev Sprint Coordinators</b> - Sayan Chowdhury (<a href="https://twitter.com/chowdhury_sayan">@chowdhury_sayan</a>) & Chandan Kumar (<a href="https://twitter.com/ciypro">@ciypro</a>)</li>
++              <li><b>Social Media Coordinators</b> - Mudit Sethia (<a href="https://twitter.com/pymudit">@pymudit</a>) & Rashid Khan (<a href="https://twitter.com/WorkaholicKhan">@WorkaholicKhan</a>)</li>
++              <li><b>Website</b>
++                <ul>
++                  <li>Vijay Bang (<a href="https://twitter.com/vnbang2003">@vnbang2003</a>)</li>
++                  <li>Kiran Gangadharan (<a href="https://twitter.com/kirang89">@kirang89</a>)</li>
++                  <li>Sivasubramanyam A (<a href="https://twitter.com/astronomersiva">@astronomersiva</a>)</li>
++                  <li>Saurabh Kumar (<a href="https://twitter.com/_theskumar">@_theskumar</a>)</li>
++                  <li>Shrayas Rajagopal (<a href="https://twitter.com/shrayasr">@shrayasr</a>)</li>
++                  <li>Mahanthesh Shadakshari</li>
++                </ul>
++              </li>
++              <li><b>Blog</b>
++                <ul>
++                  <li>Content Editor</b> - Haris Ibrahim (<a href="https://twitter.com/harisibrahimkv">@harisibrahimkv</a>)</li>
++                </ul>
++              </li>
+             </ul>
+-            <br>
+-            <br>
+-            <h3>Dev Sprint</h3>
+-            <ul>
+-              <li><b>Lead</b> - Sayan Chowdhury (<a href="https://twitter.com/chowdhury_sayan">@chowdhury_sayan</a>)</li>
+-              <li><b>Volunteer</b> - Chandan Kumar (<a href="https://twitter.com/ciypro">@ciypro</a>)</li>
+-            </ul>
+-            <br>
+-            <br>
+-            <h3>Volunteer Co-ordinator</h3>
+-            <ul>
+-              <li><b>Volunteer Co-ordinator</b> - Chandan Kumar (<a href="https://twitter.com/ciypro">@ciypro</a>)</li>
+-            </ul>
+-            <br>
+-            <br>
+-            <h3>Social Media</h3>
+-            <ul>
+-              <li><b>Lead</b> - Mudit Sethia (<a href="https://twitter.com/pymudit">@pymudit</a>)</li>
+-              <li><b>Volunteer</b> - Rashid Khan (<a href="https://twitter.com/WorkaholicKhan">@WorkaholicKhan</a>)</li>
+             </ul>
+             <br>
+-            <br>
+-            <h3>Blog</h3>
+-            <ul>
+-              <li><b>Content Editor</b> - Haris Ibrahim (<a href="https://twitter.com/harisibrahimkv">@harisibrahimkv</a>)</li>
+-            </ul>
+             <p>
+             </p>
+         </div>
+-- 
+2.4.3
+
