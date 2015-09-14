@@ -115,10 +115,10 @@ pre code {
     -webkit-box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
 }
 .header.navbar-fixed-top {
     background: rgba(255, 255, 255, 1);
-    z-index: 9999;
     -webkit-box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
